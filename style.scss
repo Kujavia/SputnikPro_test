@@ -1,0 +1,132 @@
+@import "./src/scss/vars.scss";
+@import "./src/scss/templates.scss";
+
+@import "./src/scss/blocks/action.scss";
+@import "./src/scss/blocks/footer.scss";
+@import "./src/scss/blocks/header.scss";
+@import "./src/scss/blocks/parametrs.scss";
+
+
+body {
+  font-family: $main-font;
+  margin: 10px;
+  padding: 0;
+  // background-color: #505050;
+  background: linear-gradient(to bottom right, rgb(225, 225, 225), rgb(255, 255, 255))
+}
+
+.container{
+  max-width: 1920px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.header {
+  // background-color:$primary-color;
+  // color: white;
+  padding: 20px;
+  // text-align: start;
+  // font-family: $main-font;
+  border-radius: 15px;
+}
+
+.nav {
+  width: 200px;
+  background-color: #333;
+  color: white;
+  float: left;
+  height: 770px;
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.nav__item {
+  margin-bottom: 20px;
+}
+
+.nav__dropdown {
+  display: none;
+  margin-top: 5px;
+}
+
+.nav__item:hover .nav__dropdown {
+   display: block; 
+} /*при наведении активируется список*/
+
+.nav__item:hover {
+ color: $accent-color;
+ cursor: pointer;
+}
+.nav__user{
+  margin-top: 160%;
+  display:flex;
+  justify-content: start;
+  align-items: center;
+  #nav__img-user{
+    width: 50px;
+    margin-right: 10px;
+    background-color:$accent-color;
+    border-radius: 50px;
+  }
+}
+
+.main {
+  margin-left: 220px;
+  padding: 20px;
+  height: 100vh;
+}
+
+.content {
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: white;
+  height: 800px;
+  margin: 20px;
+  margin-top: 0px;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+#dropdownButton {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none; /* Скрыто по умолчанию */
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  z-index: 1;
+  margin-top: 5px;
+}
+.dropdown-item {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+.selected-option {
+  margin-top: 20px;
+}
+
+// .forecast{ /*стиль при входе в прогноз*/
+//   padding: 5px;
+//   border: 1px rgb(255, 255, 255) solid;
+//   border-radius: 10px;
+// }
+
+// ***

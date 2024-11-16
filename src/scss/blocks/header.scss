@@ -1,0 +1,66 @@
+.header {
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    background-color: $primary-color;
+    height: 50px;
+    padding: 0 20px;
+    color: $white;
+    font-size: 0.8rem;
+
+  
+    &__logo {
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    padding: 10px;
+    }
+    
+  
+    &__nav {
+      &-list {
+        display: flex;
+        margin-left: 30vw;
+        // justify-content: start;
+      }
+      &-item {
+        margin-left: 40px;
+      }
+      &-link {
+        color: $white;
+        text-decoration:none;
+        display: inline-block; /*делаем чтобы наша ссылка из строчного элемента превратилась в строчно-блочный*/
+        line-height: 1; /*Задаём высоту строки в пикселях)*/
+        // font-weight: bold;
+        font-size: 15px;
+        font-family: $main-font;
+      }
+      &-link:hover {
+        color: $accent-color;
+        // text-decoration: underline;
+      }
+      &-link:after {
+        display: block; /*превращаем его в блочный элемент*/
+        content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+        height: 1px; /*задаём высоту линии*/
+        width: 0%; /*задаём начальную ширину элемента (линии)*/
+        background-color:$accent-color; /*цвет фона элемента*/
+        transition: width 0.4s ease-in-out; /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
+        }
+        &-link:hover:after{
+          width: 100%;
+        }
+
+    }
+}
+#header__logo-img {
+    max-width: 60px; /* Ограничиваем максимальную ширину изображения */
+    height: auto; /* Сохраняем пропорции изображения */
+    margin-right: 10px; /* Отступ между изображением и текстом */
+}
+
+.header__logo-text {
+    font-size: 24px; /* Размер шрифта для текста */
+    color: $accent-color; /* Цвет текста */
+    font-weight: bold; /* Жирный текст */
+}

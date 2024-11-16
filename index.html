@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.scss">
+    <link rel="icon" href="./src/image/logo_sputnik.jpg" type="image/png">
+
+    <title>SputnikPro</title>
+  </head>
+  <body>
+
+    <div class="container">
+    <header class="header">
+
+      <div class="header__logo">
+        <div><img id="header__logo-img" src="./src/image/logo_sputnik.jpg" alt="логотип компании Спутник"></div>
+        <div class="header__logo-text">SputnikPro</div>
+      </div>
+
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link forecast">
+              Прогнозирование</a
+            >
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">
+              Автозаказ</a
+            >
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link"> Главная</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">Сменить пользователя</a>
+          </li>
+       
+        </ul>
+      </nav>
+  </header>
+ <!-- боковая навигациооная панель -->
+ <!-- МОООЕ -->
+  <nav class="nav">
+
+      <div class="nav__item">
+          Дополнительные сведения
+          <div class="nav__dropdown">
+              <select onclick="showContent(this.value)">
+                  <option value="">Дополнительные сведения</option>
+                  <option value="action">Акции</option>
+                  <option value="content2">Блокировки</option>
+                  <option value="content3">Вывод</option>
+                  <option value="content4">Новинки</option>
+                  <option value="content5">Листинги</option>
+                  <option value="content6">Тендеры</option>
+                  <option value="content7">Изменение цен</option>
+              </select>
+          </div>
+      </div>
+
+    <div class="nav__item nav__item-parameters" onclick="showContent_parameters()">
+      Параметры прогнозирования
+  </div>
+
+
+      <div class="nav__item">
+          Прогнозирование
+          <div class="nav__dropdown">
+              <select onchange="showContent(this.value)">
+                  <option value="">Выберите...</option>
+                  <option value="content8">Сезонность</option>
+                  <option value="content9">Регулярный ассортимент</option>
+                  <option value="content10">Промо</option>
+                  <option value="content11">Новинки</option>
+                  <option value="content12">Вывод</option>
+              </select>
+          </div>
+      </div>
+
+     
+
+      <div class="nav__item">
+          Планирование
+      </div>
+
+      <div class="nav__item">
+          Отчётность
+      </div>
+      <div class="nav__item">
+          Справочники
+      </div>
+
+      <div class="nav__item">
+          Управление доступом
+      </div>
+
+      <div class="nav__item">
+          Администрирование
+      </div>
+
+      <div class="nav__item">
+          Информация
+      </div>
+
+      <div class="nav__user">
+        <div> <img id="nav__img-user" src="./src/image/question.png" alt="пользователь первый"></div>
+        <p>Авторизуйтесь</p>
+    </div>
+
+  </nav> 
+
+ 
+
+ 
+  <main class="main">
+      <div class="content" id="mainContent">
+          Пожалуйста, выберите необходимый пункт в панели навигации
+      </div>
+  </main>
+
+  <footer class="footer">
+    <nav class="footer__nav">
+      <ul class="footer__nav-list">
+        <li class="footer__nav-item">
+          <a href="#" class="footer__nav-link">Главная</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#section_1" class="footer__nav-link">О нас</a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#section_2" class="footer__nav-link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- <div class="footer__rights">Все права защищены © 2024</div> -->
+  </footer>
+</div>
+    <script src="/main.js"></script>
+
+ 
+  </body>
+</html>

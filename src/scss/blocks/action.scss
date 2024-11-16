@@ -1,0 +1,76 @@
+
+.title-blocks{
+    margin-top: 10px;
+    font-size: 14px;
+    font-style: italic;
+}
+.nav__item {
+    position: relative; /* Для абсолютного позиционирования дочерних элементов */
+}
+
+.nav__dropdown select {
+    // background-color: #ffffff; 
+    // color: #000;
+    // border: 1px solid $primary-color;
+    border-radius: 4px;
+    padding-left: 5px;
+    font-size: 14px;
+    height: 2rem;
+    // cursor: pointer; 
+}
+
+/*стилизация по гридам*/
+.action_container {
+    display: grid;
+    grid-template-columns: repeat(2, 350px); /* 3 столбца */
+    grid-template-rows: repeat(7, auto); /* 7 строк с автоматической высотой */
+    gap: 10px; /* Промежуток между элементами */
+    padding-left: 40px; 
+    padding-top: 20px;
+    // width: 800px;
+}
+
+/* ширина и высота полей ввода*/
+#action_user, #action_scu, #action_region, #action_mechanics,#action_discount{
+    width: 200px;
+    height: 30px;
+}
+#action_date-creation,  #action_date-start, #action_date-finish {
+    width: 196px;
+    height: 30px;
+}
+
+#action_addition, #action_user-comment{
+    width: 200px;
+    height: 60px;
+}
+
+#action_saveButton{
+    grid-column: span 2;
+    width: 250px;
+    height: 30px;
+    margin-left: 180px;
+}
+
+#action_templateButton{
+    margin-top: 20px;
+    width: 200px;
+    height: 30px;
+}
+
+.action_selectFileButton {
+    grid-column: span 2; /* Выбор файла занимает две ячейки */
+    margin-top: 20px;
+    font-style: italic;
+    font-size: small;
+}
+#action_selectFileButton{
+    margin: 10px;
+}
+
+#download_saveButton{
+    grid-column: span 2;
+    margin-top: 20px;
+    width: 200px;
+    height: 30px;
+}

@@ -3,7 +3,7 @@ function showContent(value) {
   const contentDiv = document.getElementById('mainContent');
   switch (value) {
       case 'action':
-          fetch('/src/html/action.html')
+          fetch('./src/html/action.html')
               .then(response => {
                   if (!response.ok) {
                       throw new Error('Модуль не отвечает');
@@ -19,22 +19,22 @@ function showContent(value) {
               });
           break;
       case 'content2':
-          contentDiv.innerHTML = '<h2>Содержимое 2</h2><p>Это текст для содержимого 2.</p>';
+          contentDiv.innerHTML = '<h2>Содержимое 2</h2><p>Блокировки</p>';
           break;
       case 'content3':
-          contentDiv.innerHTML = '<h2>Содержимое 3</h2><p>Это текст для содержимого 3.</p>';
+          contentDiv.innerHTML = '<h2>Содержимое 3</h2><p>Вывод</p>';
           break;
       case 'content4':
-          contentDiv.innerHTML = '<h2>Содержимое 4</h2><p>Это текст для содержимого 4.</p>';
+          contentDiv.innerHTML = '<h2>Содержимое 4</h2><p>Новинки</p>';
           break;
       case 'content5':
-          contentDiv.innerHTML = '<h2>Содержимое 5</h2><p>Это текст для содержимого 4.</p>';
+          contentDiv.innerHTML = '<h2>Содержимое 5</h2><p>Листинги</p>';
           break;
       case 'content6':
-          contentDiv.innerHTML = '<h2>Содержимое 6</h2><p>Это текст для содержимого 4.</p>';
+          contentDiv.innerHTML = '<h2>Содержимое 6</h2><p>Тендеры</p>';
           break;
       case 'content7':
-          contentDiv.innerHTML = '<h2>Содержимое 7</h2><p>Это текст для содержимого 4.</p>';
+          contentDiv.innerHTML = '<h2>Содержимое 7</h2><p>Изменение цен</p>';
           break;
       case 'content8':
               contentDiv.innerHTML = '<h2>Содержимое 8</h2><p>Это текст для содержимого 4.</p>';

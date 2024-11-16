@@ -44,4 +44,3 @@ window.showContent_parameters = function() {
             mainContent.innerHTML = 'Ошибка при загрузке';
         });
 };
-
